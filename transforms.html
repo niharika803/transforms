@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            width:100%;
+            display:grid;
+            grid-template-areas:
+            "img1 img2 img3"
+            "img4 img5 img6"
+            "img7 img8 img9"
+            
+        }
+        .item1{
+            grid-area:img1;}
+        .item1:hover{
+            transform: translate(100px);
+        }
+        .item2{
+            grid-area:img2;
+        }
+        .item2:hover{
+            transform: scale(2);
+        }
+        .item3{
+            grid-area:img3;
+        }.item3:hover{
+            transform:rotate(45deg);
+        }
+        .item4{
+            grid-area:img4;
+        }.item4:hover{
+            transform: skew(30deg,20deg);
+        }
+        .item5{
+            grid-area:img5;
+        }.item5:hover{
+            transform: scale(2);
+        }
+        .item6{
+            grid-area:img6;
+        }.item6:hover{
+            transform: skew(20deg,45deg);
+        }
+        .item7{
+            grid-area:img7;
+        }.item7:hover{
+            transform: scale(3);
+        }
+        .item8{
+            grid-area:img8;
+        }.item8:hover{
+            transform: rotate(180deg);
+        }
+        .item9{
+            grid-area:img9;
+        }.item9:hover{
+            transform: translatey(50px);
+        }
+        img{
+            width:100%;
+            height:100%;
+            
+            border: 5px solid black;
+        }
+        
+        
+ </style>
+</head>
+<body>
+    <div class="container">
+        
+            <img src="./G11.jpeg" class="item1">
+            <img src="./G2.jpeg" class="item2"> 
+            <img src="./G3.jpeg" class="item3">
+            <img src="./G4.jpeg" class="item4"> 
+            <img src="./G5.jpeg" class="item5">
+            <img src="./G6.jpeg" class="item6"> 
+            <img src="./G7.jpeg" class="item7">
+            <img src="./G8.jpeg" class="item8"> 
+            <img src="./G9.jpeg" class="item9">
+        
+    </div>
+</body>
+</html>
